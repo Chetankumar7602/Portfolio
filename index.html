@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/777ea756fe.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="logo.gif" class="logo"> -->
+                <video src="logo.mp4" autoplay muted></video>
+                <ul id="sidemenu">
+                    <li onclick="scrollToSection('home')"><a href="#">Home</a></li>
+                    <li onclick="scrollToSection('about')"><a href="#">About</a></li>
+                    <li onclick="scrollToSection('services')"><a href="#">Services</a></li>
+                    <li onclick="scrollToSection('work')"><a href="#">Portfolio</a></li>
+                    <li onclick="scrollToSection('contact')"><a href="#">Contact</a></li>
+                    <!-- <li><a href="Resume_pdf.pdf" download class="onclick-resume">Download resume</a></li> -->
+                        <a href="Resume_pdf.pdf" download class="btn3" target="_blank">Download resume</a>
+                    <!-- </li> -->
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front end Learner</p>
+                <h1>Hi, I'm <span>Chetankumar</span><br> from Bangalore</h1>
+
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about.png" alt="about">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>I am a passionate and driven web developer with a strong foundation in front-end technologies
+                        such as HTML, CSS, JavaScript, and jQuery. Currently, I am interning at XYZ Company, where I am
+                        honing my skills in building user-friendly, responsive web applications. My focus is on creating
+                        clean, efficient code and intuitive user experiences. With a keen interest in learning and
+                        applying new technologies, I am constantly exploring ways to enhance my skill set. I thrive in
+                        collaborative environments and enjoy solving complex problems. In addition to my technical
+                        abilities, I am committed to continuous growth and am always eager to take on new challenges.
+                        When I'm not coding, you can find me exploring the latest web design trends and contributing to
+                        open-source projects.</p>
+
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML,CSS</span><br>Designing Web/App interfaces</li>
+                            <li><span>Javascript</span><br>Creating Resposive Web Pages</li>
+                            <li><span>Git,Github</span><br>Implemetimg all Git comands</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Intern at Arctictern</span><br>Designing Web/App interfaces</li>
+                            <li><span>Did internship at internpe</span><br>Learnt basics of front end coding</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br><h3>Electronics and Communication Engineeering</h3> at SDM College of Engineering and Technology (2024)</li>
+                            <li><span>2020</span><br>Secondary Education at KLE's GH College, Haveri (2020)</li>
+                            <li><span>2018</span><br>Euro School, Bangalore (2018)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>
+                        Responsive Web Design
+                    </h2>
+                    <p>
+                        <span class="detailed-text">
+                            Crafting visually appealing and user-friendly web pages that adapt
+                            seamlessly across all devices, ensuring a consistent user experience whether on mobile,
+                            tablet, or desktop. Utilizing HTML, CSS, and JavaScript to implement clean, efficient, and
+                            accessible designs.
+                        </span>
+
+                        <span class="short-text">
+                            Crafting user-friendly web pages that adapt seamlessly across all devices.
+                        </span>
+                        <br>Key Skills: HTML, CSS, JavaScript, Responsive Design
+                    </p>
+                    <a href="index2.html" target="_blank">
+                        Learn More
+                    </a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h2>
+                        Interactive Web Development
+                    </h2>
+                    <p>
+                        <span class="detailed-text">
+                            Developing dynamic and interactive web applications that engage users through smooth
+                            animations, intuitive navigation, and responsive interfaces. Leveraging JavaScript to
+                            enhance user interactions and create a more immersive browsing experience.
+                        </span>
+                        <span class="short-text">
+                            Developing dynamic web applications with smooth animations and responsive interfaces.
+                        </span>
+                        <br>Key Skills: JavaScript, jQuery, DOM Manipulation, User Interaction
+                    </p>
+                    <a href="index3.html" target="_blank">
+                        Learn More
+                    </a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-github"></i>
+                    <h2>
+                        Version Control and Collaboration
+                    </h2>
+                    <p>
+                        <span class="detailed-text">
+                            Managing and collaborating on web development projects using Git and GitHub. Ensuring smooth
+                            version control, efficient code management, and streamlined collaboration with team members.
+                            Implementing best practices for code versioning, branching, and merging.
+                        </span>
+                        <span class="short-text">
+                            Managing web development projects with Git and GitHub, ensuring smooth version control and
+                            collaboration.
+                        </span>
+                        <br>Key Skills: Git, GitHub, Version Control, Collaborative Development.
+                    </p>
+                    <a href="index4.html" target="_blank">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work1.png">
+                <div class="layer">
+                    <h3>Password Manager</h3>
+                    <p>
+                        <span class="detailed-text">
+                        Developed a secure and user-friendly password manager that allows users to store and manage their
+                        passwords in one place. The application features encryption for sensitive data, password
+                        generation, and easy retrieval of stored credentials. Built with a focus on security, the
+                        password manager ensures that users' information remains protected.
+                    </span>
+                        <span class="short-text">
+                            Created a secure and user-friendly password manager for storing and managing credentials. Features include encryption for sensitive data, password generation, and easy retrieval, focusing on robust security to protect users' information.
+                        </span>
+                    </p>
+                    <a href="https://password-manager-bay.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work2.png">
+                <div class="layer">
+                    <h3>Tic Tac Toe & Rock Paper Scissors</h3>
+                    <p>
+                        <span class="detailed-text">
+                            Developed two interactive web-based games: Tic Tac Toe and Rock Paper Scissors. Tic Tac Toe features a 3x3 grid with automatic winner detection, while Rock Paper Scissors allows users to challenge the computer with real-time score tracking. Both games, built with HTML, CSS, and JavaScript, showcase my skills in game logic, dynamic UI updates, and engaging user interactions.
+                    </span>
+                    <span class="short-text">
+                        Developed two interactive web-based games: Tic Tac Toe and Rock Paper Scissors. Both games feature intuitive interfaces, dynamic UI updates, and use HTML, CSS, and JavaScript to deliver engaging user experiences
+                    </span>
+                    </p>
+                    <div class="a-href">
+                    <a href="https://tic-tac-toe-gilt-delta.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://rock-paper-scissors-five-flax.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work3.png">
+                <div class="layer">
+                    <h3>Amazon Clone</h3>
+                    <p>
+                        <span class="detailed-text">
+                            Created a fully responsive front-end for an Amazon clone, featuring product listings, a shopping cart, and a checkout process. Leveraged HTML, CSS, and JavaScript to deliver a dynamic UI with real-time updates, ensuring a seamless and visually appealing shopping experience.
+                    </span>
+                        <span class="short-text">
+                            Developed a responsive front-end for an Amazon clone, featuring product listings, a shopping cart, and a checkout process. Utilized HTML, CSS, and JavaScript to create a dynamic, intuitive user interface with real-time updates.
+                        </span>
+                    </p>
+                    <a class="hrefs" href="https://amazon-clone-gamma-topaz.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+</div>
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <p><i class="fa-solid fa-paper-plane"></i> chetankumar7602@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0123654789</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/c_h_e_t_a_n_2016/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="   " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Chetankumar7602" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/Chetan_Kumar076" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <a href="Resume_pdf.pdf" download class="btn btn2" target="_blank">Download resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">
+                    
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2024 Chetan. All rights reserved.</p>
+    </div>
+</div>
+<script>
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (let tabLink of tabLinks) {
+            tabLink.classList.remove("active-link");
+        }
+        for (let tabContent of tabContents) {
+            tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbziNejPkVS76cOXZ1NcP6dkEahScN941D10O8M_YLUu_bNxX9EPjejMjkMdC4iD7M-fnA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</html>
