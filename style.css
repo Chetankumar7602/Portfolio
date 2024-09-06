@@ -432,11 +432,17 @@ form .btn2 {
 
 
 /* css for small screen */
+
 nav .fa-solid{
     display: none;
 }
 
 @media screen and (max-width: 600px){
+    .container nav video{
+        width: 80px;
+        height: auto;
+    }
+    
     #header{
         background-image: url(background_phone.png);
         background-size: cover;
